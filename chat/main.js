@@ -1,8 +1,8 @@
-var ALPHABET = ' abcdefghijklmnopqrstuvwxyz';
+var ALPHABET = ' 0123456789';
 // Create an ultranet server.
-var sonicServer = new SonicServer({alphabet: ALPHABET, debug: true});
+var sonicServer = new window.Sonic.SonicServer({alphabet: ALPHABET, debug: true});
 // Create an ultranet socket.
-var sonicSocket = new SonicSocket({alphabet: ALPHABET});
+var sonicSocket = new window.Sonic.SonicSocket({alphabet: ALPHABET});
 
 
 var history = document.querySelector('#history');
